@@ -5,10 +5,11 @@ Det hjär är ett CV gjort i React
 ## verktyg
 
 Jag har använt mig av:
-*React
-*TypeScript
-*Radix-ui/React-icons
-*React-Router-Dom
+* React
+* TypeScript
+* Radix-ui/React-icons
+* Radix-ui/themes
+* React-Router-Dom
 
 ## installera
 
@@ -29,3 +30,4 @@ Och för att starta:
 ```bach
    npm run dev
 ```
+Deploy: genuine-mermaid-091dcd.netlify.app
