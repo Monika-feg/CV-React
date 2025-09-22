@@ -1,0 +1,68 @@
+.repo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.repo-card {
+  background: #fff;
+  border: 2px solid rgb(157, 128, 186);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 18px 22px;
+  width: 300px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+
+.repo-card:hover {
+  box-shadow: 0 4px 24px rgba(157,128,186,0.18);
+  border-color: rgb(246, 162, 227);
+}
+
+.repo-card {
+  background: #fff;
+  border: 2px solid rgb(157, 128, 186);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 22px 24px 18px 24px;
+  width: 320px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+  font-family: 'Exo 2', Arial, sans-serif;
+}
+
+.repo-card .repo-link {
+  font-size: 1.18em;
+  font-weight: 700;
+  color: #3a006a;
+  margin-bottom: 8px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.repo-card .repo-link:hover {
+  color: #c8007f;
+  text-decoration: underline;
+}
+
+.repo-card .repo-readme {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #222;
+  text-align: left;
+  line-height: 1.6;
+  background: #f7f3fa;
+  border-radius: 6px;
+  padding: 8px 10px;
+  width: 100%;
+  word-break: break-word;
+}

@@ -1,0 +1,27 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Education from "./pages/Education";
+import Portfolio from "./pages/Portfolio";
+import WorkExperience from "./pages/WorkeExperience";
+import "./css/App.css";
+import Nevbar from "./componets/Nevbar";
+import Footer from "./componets/Footer";
+
+function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <Nevbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/workexperience" element={<WorkExperience />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
+}
+
+export default App;
