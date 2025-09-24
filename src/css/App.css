@@ -9,8 +9,8 @@ html, body {
 }
 
 body {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #dd93c2, #a144af);
+  min-height: 100vh !important;
+  background: linear-gradient(135deg, #dd93c2, #a144af) !important;
   text-align: center;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
@@ -21,6 +21,18 @@ body {
 
 #root {
   min-height: 100vh;
+  background: transparent;
+}
+
+/* Överskrid Radix styling */
+.radix-themes {
+  background: transparent !important;
+}
+
+/* Säkerställ att body behåller gradient */
+body, html {
+  background: linear-gradient(135deg, #dd93c2, #a144af) !important;
+  background-attachment: fixed !important;
 }
 /* Home page styling */
 .home-container {
