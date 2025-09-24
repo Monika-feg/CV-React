@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div>
+    <div className="home-container">
       <header>
         <p>Välkommen till min digitala CV-sida!</p>
         <h1>Monika Engström - Fullstackutvecklare</h1>
