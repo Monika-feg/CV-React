@@ -1,0 +1,163 @@
+/* Kawaii, rosa fluffig och mjuk stil för Contact-sidan */
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 18px 36px 18px;
+  text-align: center;
+  background: linear-gradient(120deg, #ffe0f7 0%, #f9c6f7 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 36px rgba(255,182,193,0.13);
+  border: 2.5px solid #ffb3e6;
+  position: relative;
+}
+
+.contact-container header {
+  margin-bottom: 40px;
+}
+
+.contact-container h1 {
+  color: #e75480;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #ffb3e6;
+  font-family: 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-container header p {
+  font-size: 1.2em;
+  color: #e75480;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  margin-top: 30px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h2 {
+  color: #ff69b4;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Exo 2', 'Segoe UI', Arial, sans-serif;
+}
+
+.contact-item {
+  background: linear-gradient(120deg, #ffe6fa 60%, #f7b3e6 100%);
+  border-radius: 18px;
+  padding: 24px 28px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 24px rgba(255,182,193,0.13);
+  transition: transform 0.22s, box-shadow 0.22s;
+  border: 2px solid #ffb3e6;
+}
+
+.contact-item:hover {
+  transform: translateY(-6px) scale(1.035);
+  box-shadow: 0 12px 40px rgba(255,182,193,0.18);
+  border-color: #ff69b4;
+}
+
+.contact-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  color: #e75480;
+  font-weight: 700;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #e75480;
+}
+
+.contact-link {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+
+.contact-link:hover {
+  color: #e75480;
+  text-decoration: underline wavy #ff69b4 2px;
+}
+
+.contact-message {
+  background: linear-gradient(90deg, #fff0fa 80%, #f7b3e6 100%);
+  border-radius: 18px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 18px rgba(255,182,193,0.10);
+  border: 2px solid #ffb3e6;
+}
+
+.contact-message h2 {
+  color: #ff69b4;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-family: 'Exo 2', 'Segoe UI', Arial, sans-serif;
+}
+
+.contact-message p {
+  color: #e75480;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Kawaii touch: stjärna i kontaktformuläret */
+.contact-container::after {
+  content: 'Kontakta Monika ✧';
+  display: block;
+  position: absolute;
+  right: 32px;
+  top: 18px;
+  font-size: 1.1em;
+  color: #fff;
+  background: linear-gradient(90deg, #ff69b4 60%, #e75480 100%);
+  padding: 2px 14px;
+  border-radius: 16px 10px 16px 10px;
+  opacity: 0.92;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: 0 1px 4px rgba(255,182,193,0.10);
+  font-family: 'Exo 2', 'Segoe UI', Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .contact-container {
+    padding: 15px;
+  }
+  .contact-container h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+  .contact-item {
+    padding: 15px;
+  }
+  .contact-message {
+    padding: 20px;
+  }
+}

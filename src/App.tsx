@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Education from "./pages/Education";
 import Portfolio from "./pages/Portfolio";
 import WorkExperience from "./pages/WorkeExperience";
+import Contact from "./pages/Contact";
 import "./css/App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/workexperience" element={<WorkExperience />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </HashRouter>

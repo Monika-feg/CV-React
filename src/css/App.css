@@ -1,17 +1,19 @@
-body{
-  
-      min-height: 100vh;
-      background: linear-gradient(135deg, #dd93c2, #a144af);
-      text-align: center;
-      font-family: "Exo 2", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    
-  
+/* Kawaii, mörkare rosa/lila och mjuk grundstil för hela siten */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap');
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b97fc9 0%, #e75480 60%, #7a357a 100%);
+  text-align: center;
+  font-family: 'Quicksand', "Exo 2", 'Segoe UI', Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  color: #fff0fa;
+  letter-spacing: 0.01em;
 }
 
-/* Överskrid Radix Theme bakgrund */
 .rt-Theme {
   background: transparent !important;
 }
@@ -19,32 +21,77 @@ body{
 #root {
   background: transparent;
 }
-/* Home page styling */
+
 .home-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 36px 18px 36px 18px;
   text-align: center;
+  background: linear-gradient(120deg, #a86fc1 0%, #e75480 100%);
+  border-radius: 28px;
+  box-shadow: 0 8px 36px rgba(122,53,122,0.18);
+  border: 2.5px solid #b97fc9;
+  position: relative;
 }
 
 .home-container section {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 28px;
+  background: linear-gradient(90deg, #cfa6e6 80%, #e75480 100%);
+  border-radius: 18px;
+  padding: 28px 20px;
+  box-shadow: 0 2px 8px rgba(122,53,122,0.13);
+  border: 2px solid #b97fc9;
+  position: relative;
 }
 
 .home-container section h2 {
   text-align: center;
   margin-bottom: 15px;
+  color: #ff69b4;
+  font-family: 'Pacifico', cursive, 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.1em;
+  background: linear-gradient(90deg, #ff69b4 0%, #7a357a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  text-shadow: 0 2px 8px #7a357a44;
+  letter-spacing: 0.04em;
+}
+
+.home-container section h2::after {
+  content: '★';
+  color: #b97fc9;
+  margin-left: 8px;
+  font-size: 1.1em;
+}
+
+.home-container h1, .home-container header h1 {
+  font-family: 'Pacifico', cursive, 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.5em;
+  color: #fff0fa;
+  letter-spacing: 0.06em;
+  text-shadow: 0 2px 12px #7a357a99;
+  margin-bottom: 0.2em;
+}
+
+.home-container p, .home-container section p {
+  font-family: 'Quicksand', 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.13em;
+  color: #fff0fa;
+  line-height: 1.8;
+  margin-bottom: 0.7em;
+  letter-spacing: 0.01em;
 }
 
 @media (max-width: 480px) {
-    body {
-        padding-left: 85px; 
-    }
-    
-    .home-container {
-        max-width: 90%;
-        padding: 15px;
-    }
+  body {
+    padding-left: 0;
+  }
+  .home-container {
+    max-width: 95%;
+    padding: 15px;
+  }
 }
 

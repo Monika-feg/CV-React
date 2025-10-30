@@ -37,6 +37,14 @@ export default function Nevbar() {
           </Link>
         </Menubar.Trigger>
       </Menubar.Menu>
+
+      <Menubar.Menu>
+        <Menubar.Trigger asChild>
+          <Link to="/contact" className="MenubarTrigger">
+            Kontakt
+          </Link>
+        </Menubar.Trigger>
+      </Menubar.Menu>
     </Menubar.Root>
   );
 }

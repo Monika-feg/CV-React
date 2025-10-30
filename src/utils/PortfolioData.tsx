@@ -28,4 +28,16 @@ export const PortfolioData = [
     readme:
       "This is the frontend for a multiplayer game project. The project also has an API built with Spring Boot.",
   },
+  {
+    name: "KawaiiCanvas API",
+    html_url: "https://github.com/Monika-feg/KawaiiCanvasApi",
+    readme:
+      "KawaiiCanvasApi är ett backend-API byggt med Spring Boot och MongoDB Atlas för att hantera en webbshop. Projektet är en skoluppgift och kan enkelt köras lokalt.",
+  },
+  {
+    name: "KawaiiCanvas Client",
+    html_url: "https://github.com/Monika-feg/KawaiiCanvasClient",
+    readme:
+      "Detta är frontend-delen till KawaiiCanvas,  en kawaii inspirerad webbshop för tavlor! ",
+  },
 ];

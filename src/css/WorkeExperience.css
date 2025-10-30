@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap');
+
+/* Kawaii, mörkare rosa/lila och mjuk stil för arbetslivserfarenhet */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.work-item {
+  background: linear-gradient(120deg, #cfa6e6 60%, #e75480 100%);
+  border: 2.5px solid #b97fc9;
+  border-radius: 22px;
+  box-shadow: 0 6px 24px rgba(122,53,122,0.13);
+  padding: 28px 32px;
+  min-width: 280px;
+  max-width: 350px;
+  transition: box-shadow 0.22s, transform 0.18s;
+  font-family: 'Quicksand', 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  position: relative;
+}
+
+.work-item:hover {
+  box-shadow: 0 12px 40px rgba(122,53,122,0.18);
+  border-color: #7a357a;
+  transform: translateY(-8px) scale(1.035);
+}
+
+.work-item h2 {
+  color: #e75480;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-family: 'Pacifico', cursive, 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(90deg, #ff69b4 0%, #7a357a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 8px #7a357a44;
+}
+
+.work-item p {
+  color: #fff0fa;
+  margin: 0 0 6px 0;
+  font-size: 1.08em;
+  font-family: 'Quicksand', 'Exo 2', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.work-item::after {
+  content: '♡';
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: #b97fc9;
+  font-size: 1.1em;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 2;
+  text-shadow: 0 1px 4px #e6c6fa;
+}
